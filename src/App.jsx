@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
-
+import Todo from './components/Todo'
+import Tittle from './components/Tittle'
+import Popup from './components/Popup'
+import Counter from './components/Counter'
 function App() {
-  const [count, setCount] = useState(0)
+  
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  return <Counter/>
+
+
+    return (
+       <>
+        <Tittle/>
+        <input type='text'/>
+        <button>Add</button>
+       
+       <Todo task="Finish React Crash Course"
+       description="first..."/>
+       <Todo task="Finish ASAP "/>
+       <Todo task="Land a Junior Job"/>
+       <Todo task="Get 100k+"/>
+       <Todo task="Enjoy life"/>
+      { <Popup tittle="are sure?"/>}
+       </>
+    
+      
+  );
 }
 
 export default App

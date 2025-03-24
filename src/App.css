@@ -1,42 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html, body {
+  /* height: 10%; */
+  /* margin: 0; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.todo-Item{
+  padding: 16px;
+  margin: 16px;
+  border:solid black 1px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter__item {
+  padding: 16px;
+  margin: 16px;
+  border: solid black 1px;
+  border-radius: 8px; /* Adds rounded corners */
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Centers the text inside the counter */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.counter__item h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #333; /* Dark gray color for the text */
 }
 
-.card {
-  padding: 2em;
+.counter__item button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary blue */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.counter__item button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
+
+.counter__item button:active {
+  background-color: #004085; /* Even darker blue on click */
+}
+
