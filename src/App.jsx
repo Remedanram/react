@@ -8,8 +8,6 @@ function App() {
   
 
   return <Counter/>
-
-
     return (
        <>
         <Tittle/>
