@@ -14,4 +14,6 @@ If you are developing a production application, we recommend using TypeScript an
 =======
 # react
 for mastering react
+yes untill now am dealing with front end with react 
+
 >>>>>>> origin/main

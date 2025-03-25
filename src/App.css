@@ -1,49 +1,38 @@
-html, body {
-  /* height: 10%; */
-  /* margin: 0; */
-  /* display: flex; */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
-.todo-Item{
-  padding: 16px;
-  margin: 16px;
-  border:solid black 1px;
-}
-.counter__item {
-  padding: 16px;
-  margin: 16px;
-  border: solid black 1px;
-  border-radius: 8px; /* Adds rounded corners */
-  background-color: #f9f9f9; /* Light gray background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-align: center; /* Centers the text inside the counter */
+.task-input {
+  margin: 20px 0;
 }
 
-.counter__item h2 {
-  margin-bottom: 16px;
-  font-size: 24px;
-  color: #333; /* Dark gray color for the text */
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
 }
 
-.counter__item button {
-  padding: 10px 20px;
-  margin: 5px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #007bff; /* Bootstrap primary blue */
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.counter__item button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+button:hover {
+  background-color: #0056b3;
 }
-
-.counter__item button:active {
-  background-color: #004085; /* Even darker blue on click */
-}
-
