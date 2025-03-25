@@ -1,0 +1,40 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .todo-item h2 {
+    font-size: 1.2em;
+  }
+  
+  .todo-item p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .todo-item.completed h2,
+  .todo-item.completed p {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .todo-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  .todo-item button:hover {
+    background-color: darkred;
+  }
+  
