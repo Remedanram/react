@@ -13,7 +13,8 @@ body {
 }
 
 .task-input {
-  margin: 20px 0;
+  margin: 20px 200px;
+
 }
 
 input[type="text"] {
