@@ -1,12 +1,18 @@
+import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 
 function Users(){
 
-    console.log(useParams())
+    const { username} = useParams()
+    
+    useEffect(()=>{
+        fetch(`https://tiktok.api.com/${username}`)
+
+    },[])
     return(
-        <dev>
-         Users Page
-        </dev>
+        <div>
+         {username}
+        </div>
     )
 }
 export default Users
